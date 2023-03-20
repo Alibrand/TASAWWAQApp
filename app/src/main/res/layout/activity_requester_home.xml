@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/main_back"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequesterHomeActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:padding="15dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_gravity="left"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Space
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/btn_search"
+            android:padding="5dp"
+            android:background="@drawable/circle_bck1"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+         <ImageView
+             android:layout_marginLeft="5dp"
+             android:id="@+id/btn_my_orders"
+             android:padding="7dp"
+             android:background="@drawable/circle_bck1"
+             android:src="@drawable/report"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+        <ImageView
+            android:id="@+id/btn_profile"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="left"
+            android:src="@drawable/acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"/>
+        <TextView
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Most Rated"
+            android:layout_marginBottom="10dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_rated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"/>
+        <ProgressBar
+            android:id="@+id/progress_rated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Space
+            android:layout_weight="0.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recently Added"
+        android:layout_marginBottom="10dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_recently"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"/>
+    <ProgressBar
+        android:id="@+id/progress_recently"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <Space
+        android:layout_weight="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Browse Products"
+        android:layout_marginBottom="10dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"/>
+    <ProgressBar
+        android:id="@+id/progress_products"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Browse Services"
+        android:layout_marginBottom="10dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_services"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"/>
+    <ProgressBar
+        android:id="@+id/progress_services"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <Space
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

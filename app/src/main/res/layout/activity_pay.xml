@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/main_back"
+    tools:context=".PayActivity">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+
+        >
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_gravity="left"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <TextView
+            android:id="@+id/txt_title"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay your bill"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_price"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay your bill"/>
+        <TextView
+            android:textSize="14sp"
+            android:textColor="#D54F4F"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Note : Please pay attention to that all sold stuffs are delivered only inside the university zone "/>
+        <EditText
+            android:id="@+id/txt_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/field_back"
+            android:drawableRight="@drawable/ic_baseline_credit_card_24"
+            android:fontFamily="@font/inter"
+            android:hint="Enter your card number.."
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/txt_expiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/field_back"
+            android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+            android:fontFamily="@font/inter"
+            android:hint="Enter Card Expiry Date"
+            android:inputType="date"
+            android:padding="12dp" />
+        <EditText
+            android:id="@+id/txt_cvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/field_back"
+            android:drawableRight="@drawable/ic_baseline_numbers_24"
+            android:fontFamily="@font/inter"
+            android:hint="Enter CVV Code"
+            android:inputType="date"
+            android:padding="12dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_back"
+            android:paddingHorizontal="20dp"
+            android:text="Pay"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

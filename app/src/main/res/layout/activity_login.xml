@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_back"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/logini1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:lines="2"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            />
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="170dp"
+            android:layout_height="170dp"/>
+
+        <EditText
+            android:id="@+id/txt_email"
+            android:hint="Enter E mail"
+            android:fontFamily="@font/inter"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:padding="12dp"
+            android:drawableRight="@drawable/ic_outline_email_24"
+            android:background="@drawable/field_back"
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingHorizontal="13dp"
+            app:passwordToggleEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_password"
+                android:background="@drawable/field_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="15dp"
+            android:id="@+id/btn_login"
+            android:background="@drawable/button_back"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Login"
+            android:paddingHorizontal="20dp"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txt_forget_password"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="#6A4610"
+            android:textSize="17sp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:text="Forgot Password?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txt_register"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="#2E1D02"
+            android:textSize="17sp"
+            android:layout_marginTop="45dp"
+            android:layout_gravity="right"
+            android:text="Don't have an account?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_margin="15dp"
+        android:id="@+id/btn_back"
+        android:layout_gravity="left"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>
+
+
+</RelativeLayout>
